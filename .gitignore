@@ -1,0 +1,31 @@
+# Build
+public/css/main.css
+build
+# Coverage reports
+coverage
+
+# API keys and secrets
+.env
+*.local.properties
+
+# Dependency directory
+node_modules
+.svelte-kit
+# Editors
+.idea
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore built css
+static/smui.css
+
+# Ignore backup files
+*.bak
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
