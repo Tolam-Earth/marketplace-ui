@@ -4,6 +4,29 @@
 
 Copy `.env-example` to `.env` before running the app. Smart Contract ID used should match what's used for Microservices and may be generated using the NPM scripts provided in the Smart Contract repository.
 
+### Environment configuration
+
+With the `.env` file in place, configure it based on desired runtime settings:
+
+API Root URL. Point to a running version of Microservices.
+
+```props
+VITE_API_ROOT_URL=http://localhost:8080/hem/v1
+```
+
+Smart Contract ID. Key name and value should match the
+key name and value used by services.
+
+```
+VITE_SMART_CONTRACT_ID=<should match services>
+```
+
+Whether to use `testnet` or `mainnet`:
+
+```
+VITE_HEDERA_ENV=testnet
+```
+
 ## Structure
 
 The application structure is as follows:
@@ -83,7 +106,7 @@ trivy config .
 Scan for image vulnerabilities:
 
 ```
-trivy image IMAGE_NAME . 
+trivy image IMAGE_NAME .
 ```
 
 ### Excluding Issues
