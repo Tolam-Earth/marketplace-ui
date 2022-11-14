@@ -23,7 +23,7 @@
   $background: #000,
   $error: color-palette.$red-700
 );
-@use './app';
+@use '../app';
 
 html,
 body {
