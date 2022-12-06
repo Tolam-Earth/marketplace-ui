@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # DOCKER-VERSION 20.10.17-ce, build a89b842
-# Maintainer: Object Computing, Inc.
+# Maintainer: Tolam Earth 
 
 # Pull alpine base image
 FROM node:18.9.1-alpine3.16 as build
